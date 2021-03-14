@@ -2,6 +2,13 @@
 hello
 fahr-to-celsius
 celsius-to-fahr
+rev-fahr-to-celsius
+getchar-is-eof
+eof
+count-btn
+trim-blanks
+list-tbs
+word-per-line
 
 # Created by https://www.toptal.com/developers/gitignore/api/c
 # Edit at https://www.toptal.com/developers/gitignore?templates=c
