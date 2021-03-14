@@ -16,7 +16,14 @@ BIN =\
 	count-btn\
 	trim-blanks\
 	list-tbs\
-	word-per-line
+	word-per-line\
+	word-length-histogram\
+	character-frequency-histogram\
+	fun-fahr-to-celsius\
+	longest-line-v2\
+	print-80p\
+	trim-btn\
+	reverse
 
 all: ${BIN}
 	@echo "all built"
@@ -39,5 +46,12 @@ count-btn: count-btn.o
 trim-blanks: trim-blanks.o
 list-tbs: list-tbs.o
 word-per-line: word-per-line.o
+word-length-histogram: word-length-histogram.o
+character-frequency-histogram: character-frequency-histogram.o
+fun-fahr-to-celsius: fun-fahr-to-celsius.o
+longest-line-v2: longest-line-v2.o
+print-80p: print-80p.o
+trim-btn: trim-btn.o
+reverse: reverse.o
 
 -include ${DEP}

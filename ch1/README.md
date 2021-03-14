@@ -13,3 +13,10 @@ Exercises:
 - 1-10: [list-tbs.c](list-tbs.c)
 - 1-11: DIY
 - 1-12: [word-per-line.c](word-per-line.c)
+- 1-13: [word-length-histogram.c](word-length-histogram.c)
+- 1-14: [character-frequency-histogram.c](character-frequency-histogram.c)
+- 1-15: [fun-fahr-to-celsius.c](fun-fahr-to-celsius.c)
+- 1-16: [longest-line-v2.c](longest-line-v2.c)
+- 1-17: [print-80p.c](print-80p.c)
+- 1-18: [trim-btn.c](trim-btn.c)
+- 1-19: [reverse.c](reverse.c)

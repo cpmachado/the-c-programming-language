@@ -1,3 +1,5 @@
+# Exercise binaries
+
 # Chapter 1
 hello
 fahr-to-celsius
@@ -9,6 +11,15 @@ count-btn
 trim-blanks
 list-tbs
 word-per-line
+word-length-histogram
+character-frequency-histogram
+fun-fahr-to-celsius
+longest-line-v2
+print-80p
+trim-btn
+reverse
+
+# ----------------------------------------------------------------------------
 
 # Created by https://www.toptal.com/developers/gitignore/api/c
 # Edit at https://www.toptal.com/developers/gitignore?templates=c
