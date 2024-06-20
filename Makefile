@@ -26,5 +26,6 @@ clean:
 hello: src/ch1/hello.o
 fahr: src/ch1/fahr.o
 celsius: src/ch1/celsius.o
+fahr-rev: src/ch1/fahr-rev.o
 
 .PHONY: all clean options
