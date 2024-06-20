@@ -6,3 +6,5 @@ Exercises:
 3. fahr.c (page 13)
 4. celsius.c (page 13)
 5. fahr-rev.c (page 14)
+6. iseof.c (page 17)
+7. eof.c (page 17)
