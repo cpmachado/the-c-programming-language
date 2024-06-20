@@ -1,16 +1,10 @@
 include config.mk
 
-.c.o:
-	$(CC) $(CFLAGS) -c -o $@ $< $(LDFLAGS)
-
-%:
-	$(CC) -o $@ $^
-
-
 SRC = $(wildcard src/*/*.c)
 OBJ = ${SRC:.c=.o}
 BIN = hello fahr celsius fahr-rev iseof eof blank-count blank-dedup blank-vis\
 	  word-per-line
+
 
 all: ${BIN}
 	@echo all built
@@ -34,5 +28,11 @@ blank-count: src/ch1/blank-count.o
 blank-dedup: src/ch1/blank-dedup.o
 blank-vis: src/ch1/blank-vis.o
 word-per-line: src/ch1/word-per-line.o
+
+.c.o:
+	$(CC) $(CFLAGS) -c -o $@ $< $(LDFLAGS)
+
+${BIN}:
+	$(CC) -o $@ $^
 
 .PHONY: all clean options
