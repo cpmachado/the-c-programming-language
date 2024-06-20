@@ -9,7 +9,7 @@ include config.mk
 
 SRC = $(wildcard src/*/*.c)
 OBJ = ${SRC:.c=.o}
-BIN = hello
+BIN = hello fahr celsius
 
 all: ${BIN}
 	@echo all built
@@ -24,5 +24,7 @@ clean:
 
 # ch1
 hello: src/ch1/hello.o
+fahr: src/ch1/fahr.o
+celsius: src/ch1/celsius.o
 
 .PHONY: all clean options
