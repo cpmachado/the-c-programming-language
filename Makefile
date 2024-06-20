@@ -9,7 +9,7 @@ include config.mk
 
 SRC = $(wildcard src/*/*.c)
 OBJ = ${SRC:.c=.o}
-BIN = hello fahr celsius fahr-rev iseof eof
+BIN = hello fahr celsius fahr-rev iseof eof blank-count blank-dedup blank-vis
 
 all: ${BIN}
 	@echo all built
@@ -29,5 +29,8 @@ celsius: src/ch1/celsius.o
 fahr-rev: src/ch1/fahr-rev.o
 iseof: src/ch1/iseof.o
 eof: src/ch1/eof.o
+blank-count: src/ch1/blank-count.o
+blank-dedup: src/ch1/blank-dedup.o
+blank-vis: src/ch1/blank-vis.o
 
 .PHONY: all clean options

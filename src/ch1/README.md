@@ -8,3 +8,6 @@ Exercises:
 5. fahr-rev.c (page 14)
 6. iseof.c (page 17)
 7. eof.c (page 17)
+8. blank-count.c
+9. blank-dedup.c
+10. blank-vis.c
