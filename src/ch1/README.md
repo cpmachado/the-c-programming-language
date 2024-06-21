@@ -16,3 +16,4 @@
 | 12 | word-per-line.c  | 21   |
 | 13 | word-len-hist.c  | 24   |
 | 14 | char-freq-hist.c | 24   |
+| 15 | fahr-fun.c       | 27   |

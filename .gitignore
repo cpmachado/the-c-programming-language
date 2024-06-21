@@ -13,6 +13,7 @@ blank-vis
 word-per-line
 word-len-hist
 char-freq-hist
+fahr-fun
 
 # Created by https://www.toptal.com/developers/gitignore/api/c
 # Edit at https://www.toptal.com/developers/gitignore?templates=c
