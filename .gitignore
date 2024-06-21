@@ -11,6 +11,8 @@ blank-count
 blank-dedup
 blank-vis
 word-per-line
+word-len-hist
+char-freq-hist
 
 # Created by https://www.toptal.com/developers/gitignore/api/c
 # Edit at https://www.toptal.com/developers/gitignore?templates=c
