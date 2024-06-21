@@ -2,8 +2,10 @@ include config.mk
 
 SRC = $(wildcard src/*/*.c)
 OBJ = ${SRC:.c=.o}
-BIN = hello fahr celsius fahr-rev iseof eof blank-count blank-dedup blank-vis\
-	  word-per-line word-len-hist char-freq-hist fahr-fun
+BIN = \
+	hello fahr celsius fahr-rev iseof eof blank-count blank-dedup blank-vis \
+	word-per-line word-len-hist char-freq-hist fahr-fun \
+	ranges
 
 
 all: ${BIN}
@@ -31,6 +33,9 @@ word-per-line: src/ch1/word-per-line.o
 word-len-hist: src/ch1/word-len-hist.o
 char-freq-hist: src/ch1/char-freq-hist.o
 fahr-fun: src/ch1/fahr-fun.o
+
+# ch2
+ranges: src/ch2/ranges.o
 
 .c.o:
 	$(CC) $(CFLAGS) -c -o $@ $< $(LDFLAGS)
