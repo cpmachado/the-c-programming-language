@@ -1,23 +1,3 @@
-# binaries
-
-# ch2
-ranges
-
-# ch1
-hello
-fahr
-celsius
-fahr-rev
-iseof
-eof
-blank-count
-blank-dedup
-blank-vis
-word-per-line
-word-len-hist
-char-freq-hist
-fahr-fun
-
 # Created by https://www.toptal.com/developers/gitignore/api/c
 # Edit at https://www.toptal.com/developers/gitignore?templates=c
 
