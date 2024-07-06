@@ -1,3 +1,4 @@
+/* Copyright © 2024 cpmachado */
 #include <stdio.h>
 
 #define IN 1

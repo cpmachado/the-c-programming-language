@@ -1,3 +1,4 @@
+/* Copyright © 2024 cpmachado */
 #include <float.h>
 #include <limits.h>
 #include <stdio.h>

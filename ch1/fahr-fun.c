@@ -1,3 +1,4 @@
+/* Copyright © 2024 cpmachado */
 #include <stdio.h>
 
 float fahrenheitToCelsius(float fahr) { return (5.0 / 9.0) * (fahr - 32.0); }
