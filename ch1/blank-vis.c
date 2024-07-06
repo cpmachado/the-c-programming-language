@@ -1,20 +1,19 @@
 #include <stdio.h>
 
-int
-main(void) {
-	int c;
+int main(void) {
+  int c;
 
-	while((c = getchar()) != EOF) {
-		if (c == '\t') {
-			printf("\\t");
-		} else if (c == '\\') {
-			printf("\\\\");
-		} else if (c == '\b') {
-			printf("\\b");
-		} else {
-			putchar(c);
-		}
-	}
+  while ((c = getchar()) != EOF) {
+    if (c == '\t') {
+      printf("\\t");
+    } else if (c == '\\') {
+      printf("\\\\");
+    } else if (c == '\b') {
+      printf("\\b");
+    } else {
+      putchar(c);
+    }
+  }
 
-	return 0;
+  return 0;
 }
