@@ -4,3 +4,4 @@ escape
 expand
 itoa
 itob
+itoa-pad
