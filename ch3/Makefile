@@ -1,6 +1,6 @@
 include ../config.mk
 
-BIN = binsearch escape expand itoa
+BIN = binsearch escape expand itoa itob
 
 include ../build.mk
 
@@ -9,3 +9,4 @@ binsearch: binsearch.o
 escape: escape.o
 expand: expand.o
 itoa: itoa.o
+itob: itob.o
