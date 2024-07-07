@@ -3,6 +3,9 @@
 My solutions to "The C Programming Language, 2nd Edition", by Dennis M.
 Ritchie, and Brian W. Kernighan.
 
+# Completed Chapters
+- Chapter 3
+
 # License
 
 ```text
