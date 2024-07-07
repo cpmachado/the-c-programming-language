@@ -1,7 +1,7 @@
 /* Copyright © 2024 cpmachado */
+/* Tests through the whole range of number of elements */
 #include <assert.h>
 #include <stdio.h>
-#include <stdlib.h>
 #include <time.h>
 
 #define N_ELEMS 1000000
@@ -9,18 +9,15 @@
 
 int book_binsearch(int x, int v[], int n);
 int my_binsearch(int x, int v[], int n);
-void gen_int_seq(int v[], int n);
 
 int main(void) {
   int v[N_ELEMS], x, idx;
   clock_t t, book = 0, own = 0;
   int i;
 
-  srand(time(NULL));
-  gen_int_seq(v, N_ELEMS);
   printf("Testing %d samples on an array of %d elements\n", N_SAMPLES, N_ELEMS);
-  for (i = 0; i < N_SAMPLES; i++) {
-    x = rand() % N_ELEMS;
+  for (i = 0; i < N_ELEMS; i++) {
+    x = i;
     t = clock();
     idx = book_binsearch(x, v, N_ELEMS);
     book += clock() - t;
@@ -31,8 +28,8 @@ int main(void) {
     assert(idx == x);
   }
 
-  printf("On average book solution took %g\n", (double)book / N_SAMPLES);
-  printf("On average own solution took %g\n", (double)own / N_SAMPLES);
+  printf("On average book solution took %g\n", (double)book / N_ELEMS);
+  printf("On average own solution took %g\n", (double)own / N_ELEMS);
 
   return 0;
 }
@@ -76,10 +73,4 @@ int my_binsearch(int x, int v[], int n) {
   }
 
   return -1;
-}
-
-void gen_int_seq(int v[], int n) {
-  for (int i = 0; i < n; i++) {
-    v[i] = i;
-  }
 }
