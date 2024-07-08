@@ -9,6 +9,6 @@
 | 5  | any.c      | 48   |
 | 6  | setbits.c  | 49   |
 | 7  | invert.c   | 49   |
-| 8  |            | 49   |
+| 8  | rightrot.c | 49   |
 | 9  | bitcount.c | 51   |
 | 10 | lower.c    | 52   |

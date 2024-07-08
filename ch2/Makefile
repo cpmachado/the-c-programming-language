@@ -1,6 +1,6 @@
 include ../config.mk
 
-BIN = ranges htoi squeeze any setbits invert bitcount lower
+BIN = ranges htoi squeeze any setbits invert rightrot bitcount lower
 
 include ../build.mk
 
@@ -11,5 +11,6 @@ squeeze: squeeze.o
 any: any.o
 setbits: setbits.o
 invert: invert.o
+rightrot: rightrot.o
 bitcount: bitcount.o
 lower: lower.o
