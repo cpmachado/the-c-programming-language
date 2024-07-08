@@ -1,6 +1,6 @@
 include ../config.mk
 
-BIN = ranges htoi squeeze
+BIN = ranges htoi squeeze any
 
 include ../build.mk
 
@@ -8,4 +8,4 @@ include ../build.mk
 ranges: ranges.o
 htoi: htoi.o
 squeeze: squeeze.o
-
+any: any.o
