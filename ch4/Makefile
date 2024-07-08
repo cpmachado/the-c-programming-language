@@ -1,8 +1,9 @@
 include ../config.mk
 
-BIN = swap
+BIN = strrindex swap
 
 include ../build.mk
 
 # ch4
+strrindex: strrindex.o
 swap: swap.o
