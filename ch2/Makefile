@@ -1,6 +1,6 @@
 include ../config.mk
 
-BIN = ranges htoi squeeze any lower
+BIN = ranges htoi squeeze any bitcount lower
 
 include ../build.mk
 
@@ -9,4 +9,5 @@ ranges: ranges.o
 htoi: htoi.o
 squeeze: squeeze.o
 any: any.o
+bitcount: bitcount.o
 lower: lower.o
