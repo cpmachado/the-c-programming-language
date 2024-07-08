@@ -3,5 +3,6 @@ ranges
 htoi
 squeeze
 any
+setbits
 bitcount
 lower

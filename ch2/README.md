@@ -7,7 +7,7 @@
 | 3  | htoi.c     | 46   |
 | 4  | squeeze.c  | 48   |
 | 5  | any.c      | 48   |
-| 6  |            | 49   |
+| 6  | setbits.c  | 49   |
 | 7  |            | 49   |
 | 8  |            | 49   |
 | 9  | bitcount.c | 51   |
