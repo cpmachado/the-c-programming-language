@@ -4,5 +4,6 @@ htoi
 squeeze
 any
 setbits
+invert
 bitcount
 lower
