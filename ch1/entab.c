@@ -1,3 +1,4 @@
+/* Copyright © 2024 cpmachado */
 #include <ctype.h>
 #include <stdio.h>
 #include <stdlib.h>
