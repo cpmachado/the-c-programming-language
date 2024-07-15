@@ -1,24 +1,47 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
 
-#define N 4
+extern char *optarg;
 
-int main(void) {
+#define SPACES_PER_TAB_DEFAULT 4
+
+int main(int argc, char *argv[]) {
   int c;
   int i;
+  int opt;
+  int spaces_per_tab = SPACES_PER_TAB_DEFAULT;
 
-  while ((c = getchar()) != EOF) {
-    if (c == '\t') {
-      for (; i < N; i++) {
+  while ((opt = getopt(argc, argv, ":n:")) != -1) {
+    switch (opt) {
+    case 'n':
+      spaces_per_tab = atoi(optarg);
+      if (spaces_per_tab < 1) {
+        printf("Invalid value: %s\n", optarg);
+        exit(1);
+      }
+      break;
+    default:
+      printf("Invalid flag\n");
+      exit(1);
+    }
+  }
+
+  for (i = 0; (c = getchar()) != EOF;) {
+    switch (c) {
+    case '\t':
+      for (i %= spaces_per_tab; i < spaces_per_tab; i++) {
         putchar(' ');
       }
+      break;
+    case '\n':
+      putchar('\n');
       i = 0;
-    } else {
+      break;
+    default:
       putchar(c);
-    }
-    if (c == '\n') {
-      i = 0;
-    } else {
-      i = (i + 1) % N;
+      i++;
+      break;
     }
   }
   return 0;
