@@ -13,9 +13,9 @@ clean:
 	@rm -rf ${OBJ} ${BIN}
 
 .c.o:
-	$(CC) $(CFLAGS) -c -o $@ $< $(LDFLAGS)
+	$(CC) $(CFLAGS) -c -o $@ $<
 
 ${BIN}:
-	$(CC) -o $@ $^
+	$(CC) -o $@ $^ $(LDFLAGS)
 
 .PHONY: all clean options
