@@ -2,7 +2,7 @@ include ../config.mk
 
 BIN = hello fahr celsius fahr-rev iseof eof blank-count blank-dedup \
 	blank-vis word-per-line word-len-hist char-freq-hist fahr-fun\
-	detab entab
+	detab entab uncomment
 
 include ../build.mk
 
@@ -22,3 +22,4 @@ char-freq-hist: char-freq-hist.o
 fahr-fun: fahr-fun.o
 detab: detab.o
 entab: entab.o
+uncomment: uncomment.o
